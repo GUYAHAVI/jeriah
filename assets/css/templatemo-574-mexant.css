@@ -972,4 +972,109 @@ header
 .socialmediaagency {
   background-color: #7b2e2e;
 }
-  
+.seoimg{
+  background-color: #7b2e2e;
+  margin-right: -1rem;
+  height: 100%;
+}
+.seotxt{
+  background-color: #fff;
+  color: #191a20;
+  font-family: playfair, serif;
+  font-weight: 400;
+  font-size: 1em !important;
+  line-height: .2em !important;
+  padding: 2rem;
+  margin-left: 0;
+}
+.seotxt h2{
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding:.5rem;
+  color: #7b2e2e;
+}
+
+.seotxt ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  /* margin-bottom: .5rem; */
+  padding:.4em;
+  color: #7b2e2e;
+}
+
+.whatweoffer container{
+  background-color: #f7f7f7;
+}
+.offercard{
+  /* background-color: #7b2e2e; */
+  color: #000;
+  /* padding: 1rem; */
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 1rem;
+  z-index: 15;
+  font-family: playfair, serif;
+  font-weight: 400;
+  font-size: 1em !important;
+  line-height: .2em !important;
+  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.offercardimg{
+  height: 35vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/calculator-bg.jpg');
+
+}
+.offercardimg p{
+  font-size: 1.2rem;
+  background-color: #7b2e2e;
+  /* font-weight: 700; */
+  color: #fff;
+  margin-top: 1rem;
+  padding: .5rem;
+  margin-left: 1rem;
+}
+.offercardimg i{
+  font-size: 2rem;
+  color:#7b2e2e ;
+  padding-right: .5rem;
+}
+.offercardtxt{
+  border-bottom: #7b2e2e 2px solid;
+}
+.offercardtxt h3{
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  padding:.5rem;
+  color: #7b2e2e;
+}
+
+.offercardtxt p{
+  font-size: 1rem;
+  font-weight: 400;
+  /* margin-bottom: .5rem; */
+  padding:.4em;
+  /* color: #7b2e2e; */
+}
+
+.whatweoffer .col-md-4{
+  margin-bottom: 2rem;
+}
+
+  .price h4{
+    
+    color: #7b2e2e;
+    padding-left: 2rem;
+    border-radius: 1rem;
+   
+    margin-top: 1rem;
+   
+    font-family: playfair, serif;
+    
+   
+  }
