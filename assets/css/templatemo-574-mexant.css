@@ -626,7 +626,7 @@ header
     height: auto;
   }
   .header-area .main-nav .nav li.has-sub:after {
-    color: #3b566e;
+    /* color: #3b566e; */
     right: 30px;
     font-size: 14px;
     top: 15px;
@@ -652,8 +652,7 @@ header
   height: auto;
   position: relative;
   z-index: 15;
-  padding-left: -20px;
-  margin-left: -20px;
+
 }
 .herobtns a {
   display: inline-block;
@@ -1198,4 +1197,87 @@ header
   font-size: 2rem;
   color:#ff511a ;
   padding-right: .5rem;
+}
+.latestmarketingarticles h2{
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding:.5rem;
+  color: #7b2e2e;
+}
+.latestmarketingarticles p{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: .5rem;
+  padding:.5em;
+  padding-left: 2.4rem;
+  
+}
+.hotdealimg{
+  /* background-color: #7b2e2e; */
+  
+  height: 45vh !important;
+  object-fit:cover;
+  object-position: center;
+  overflow: hidden;
+}
+.article-card{
+  background-color: #7b2e2e;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  /* height: 100%; */
+  margin-top: 1rem;
+  margin-left: .5rem;
+  z-index: 15;
+  font-family: playfair, serif;
+  font-weight: 400;
+  font-size: 1em !important;
+  line-height: .2em !important;
+  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+.article-cardimg{
+  height: 35vh;
+  width: 100%;
+object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  /* background-image: url('../images/calculator-bg.jpg'); */
+}
+footer {
+  background-color: #7b2e2e;
+  color: #fff;
+  padding: 2rem;
+  
+}
+footer h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding:.5rem;
+  color: #ff511a;
+  border-bottom: #ff511a solid 2px;
+}
+footer a {
+  
+  margin-bottom: .5rem;
+  padding:.5em;
+  padding-bottom: 2rem !important;
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ff511a;
+}
+footer i{
+  font-size: 1.5rem;
+  color: #ff511a;
+  padding-right: .5rem;
+}
+footer h4{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  padding:.5rem;
+  color: #ff511a;
 }
