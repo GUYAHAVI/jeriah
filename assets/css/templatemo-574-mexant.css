@@ -31,7 +31,7 @@ html,
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  /* background-color: #fff; */
+ overflow-x: hidden;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -1280,4 +1280,9 @@ footer h4{
   margin-bottom: .5rem;
   padding:.5rem;
   color: #ff511a;
+}
+.starsicons {
+  color: #ff511a;
+  font-size: 1.2rem;
+  padding-right: .2rem;
 }
