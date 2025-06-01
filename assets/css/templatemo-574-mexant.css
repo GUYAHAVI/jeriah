@@ -1286,3 +1286,104 @@ footer h4{
   font-size: 1.2rem;
   padding-right: .2rem;
 }
+
+.missionvision .mission, .missionvision .vision {
+  margin-bottom: 2rem;
+  background-color: #7b2e2e;
+  padding: 1rem;
+  color:#eee;
+  margin: 0.1rem;
+  width: 100% !important;
+}
+.missionvision i {
+  font-size: 2rem;
+  color:#7b2e2e;
+  background: #ff511a;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+.missionvision p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: .5rem;
+  padding:.5em;
+  /* padding-left: 3rem; */
+  color: #fff;
+}
+.value-item {
+  background-color: #7b2e2e;
+  padding: 1rem;
+  color:#eee;
+  margin: 0.1rem;
+  width: 100% !important;
+}
+.whywethebest {
+  position: relative;
+  background-image: url('../images/freepik__vector-image-of-a-diverse-team-collaborating-on-a-__83257.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  color: #fff; /* Ensures text is visible on dark background */
+  z-index: 1;
+}
+
+.whywethebest::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust darkness */
+  z-index: -1;
+}
+.best-item {
+  position: relative;
+  background-color: #eee;
+  padding: 1rem;
+  color:#000;
+  margin: 0.1rem;
+  width: 100% !important;
+  z-index: 150 !important;
+}
+.best-item i {
+  font-size: 2rem;
+  color:#eee;
+  background: #7b2e2e;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+.best-item i:hover {
+  color: #ff511a;
+  background: #fff;
+  animation: shake .7s ease-in-out;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+.best-item h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  padding:.5rem;
+  color: #7b2e2e;
+}
+.best-item p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: .5rem;
+  padding:.5em;
+  /* padding-left: 3rem; */
+  color: #000;
+}
+.whywethebestcontinued{
+  margin-top: -4rem;
+}
