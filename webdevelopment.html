@@ -262,9 +262,9 @@
 
   <body>
   
-  <!-- Header Start -->
+ <!-- Header Start -->
     <header class="jeriah-header">
-        <!-- Top Bar -->
+        <!-- Top Bar with your exact color scheme -->
         <div class="header-topbar">
             <div class="container">
                 <div class="row align-items-center">
@@ -287,20 +287,18 @@
             </div>
         </div>
         
-        <!-- Main Navigation with Larger Logo -->
+        <!-- Main Navigation -->
         <div class="header-main">
             <div class="container">
                 <nav class="navbar navbar-expand-lg p-0">
                     <a class="navbar-brand" href="index.html">
-                        <!-- Larger logo image -->
-                        <img src="assets/images/Jeriah-Logo-5.png" alt="Jeriah Digital Agency" class="img-fluid">
+                        <img src="assets/images/Jeriah_Digital.png" alt="Jeriah Digital Agency" class="img-fluid">
                     </a>
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
                     </button>
                     
-                    <!-- Rest of your navigation remains exactly the same -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto jeriah-nav">
                             <li class="nav-item">
@@ -340,7 +338,6 @@
                                 </div>
                             </li>
                             
-                            <!-- Rest of your navigation items remain the same -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Pages
@@ -391,7 +388,6 @@
             </div>
         </div>
     </header>
-
   <!-- Hero section start -->
 <section class="hero-section text-light pt-5" id="top">
   <div class="container">
@@ -579,96 +575,46 @@
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/custom.js"></script>
      <script>
-        // Sticky Header
-        window.addEventListener('scroll', function() {
+        // Calculate and set proper header spacing
+        function setHeaderSpacing() {
             const header = document.querySelector('.jeriah-header');
-            if (window.scrollY > 50) {
-                header.classList.add('header-sticky');
-            } else {
-                header.classList.remove('header-sticky');
-            }
-        });
+            const headerHeight = header.offsetHeight;
+            document.body.style.paddingTop = headerHeight + 'px';
+        }
+        
+        // Initialize on load and resize
+        document.addEventListener('DOMContentLoaded', setHeaderSpacing);
+        window.addEventListener('resize', setHeaderSpacing);
         
         // Enhanced dropdown functionality
         document.addEventListener('DOMContentLoaded', function() {
-            // Get all dropdown elements
             const dropdowns = document.querySelectorAll('.dropdown');
             
-            // Add event listeners for each dropdown
             dropdowns.forEach(function(dropdown) {
                 const toggle = dropdown.querySelector('.dropdown-toggle');
                 const menu = dropdown.querySelector('.dropdown-menu');
                 
-                // Show dropdown on hover for desktop
-                dropdown.addEventListener('mouseenter', function() {
-                    if (window.innerWidth > 991.98) { // Desktop view
+                // Desktop hover functionality
+                if (window.innerWidth > 991.98) {
+                    dropdown.addEventListener('mouseenter', function() {
                         this.classList.add('show');
                         menu.classList.add('show');
-                    }
-                });
-                
-                // Hide dropdown when mouse leaves
-                dropdown.addEventListener('mouseleave', function() {
-                    if (window.innerWidth > 991.98) { // Desktop view
+                    });
+                    
+                    dropdown.addEventListener('mouseleave', function() {
                         this.classList.remove('show');
                         menu.classList.remove('show');
-                    }
-                });
-                
-                // Keep dropdown open when hovering over menu
-                menu.addEventListener('mouseenter', function() {
-                    if (window.innerWidth > 991.98) { // Desktop view
+                    });
+                    
+                    menu.addEventListener('mouseenter', function() {
                         dropdown.classList.add('show');
                         this.classList.add('show');
-                    }
-                });
-                
-                menu.addEventListener('mouseleave', function() {
-                    if (window.innerWidth > 991.98) { // Desktop view
+                    });
+                    
+                    menu.addEventListener('mouseleave', function() {
                         dropdown.classList.remove('show');
                         this.classList.remove('show');
-                    }
-                });
-                
-                // For mobile, use Bootstrap's default click behavior
-                toggle.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 991.98) { // Mobile view
-                        e.preventDefault();
-                        const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                        
-                        // Close all other dropdowns
-                        document.querySelectorAll('.dropdown').forEach(function(otherDropdown) {
-                            if (otherDropdown !== dropdown) {
-                                otherDropdown.classList.remove('show');
-                                otherDropdown.querySelector('.dropdown-menu').classList.remove('show');
-                                otherDropdown.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
-                            }
-                        });
-                        
-                        // Toggle this dropdown
-                        if (!isExpanded) {
-                            dropdown.classList.add('show');
-                            menu.classList.add('show');
-                            this.setAttribute('aria-expanded', 'true');
-                        } else {
-                            dropdown.classList.remove('show');
-                            menu.classList.remove('show');
-                            this.setAttribute('aria-expanded', 'false');
-                        }
-                    }
-                });
-            });
-            
-            // Close dropdowns when clicking outside
-            document.addEventListener('click', function(e) {
-                if (window.innerWidth <= 991.98) { // Mobile view only
-                    if (!e.target.closest('.dropdown')) {
-                        document.querySelectorAll('.dropdown').forEach(function(dropdown) {
-                            dropdown.classList.remove('show');
-                            dropdown.querySelector('.dropdown-menu').classList.remove('show');
-                            dropdown.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
-                        });
-                    }
+                    });
                 }
             });
         });
